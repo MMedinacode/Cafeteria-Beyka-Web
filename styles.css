@@ -226,6 +226,8 @@ h1,h2,h3,h4{font-family:"Gloock",Georgia,serif;font-weight:400;
   font-size:21px;color:var(--crema)}
 .red-tel .red-ico{background:var(--rosa)}
 .red-map .red-ico{background:var(--verde)}
+/* El degradado real de Instagram, no un rosa cualquiera. */
+.red-ig .red-ico{background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)}
 .red-txt{display:flex;flex-direction:column;line-height:1.3}
 .red-txt b{font-family:"Gloock",serif;font-weight:400;font-size:19px}
 .red-txt em{font-style:normal;font-size:13.5px;color:var(--gris)}
