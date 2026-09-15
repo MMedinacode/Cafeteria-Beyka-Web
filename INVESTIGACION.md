@@ -1,7 +1,7 @@
 # Cafetería Beyka — Conchalí · dossier de investigación verificado
 
 > Verificado **en vivo en Google Maps el 15-09-2026**.
-> Estado: **investigada, con fotos bajadas y revisadas. FALTA CONSTRUIR.**
+> Estado: **CONSTRUIDA, probada y commiteada.** Falta publicar en Pages.
 > **Nada acá está inventado.**
 
 ## Ficha Google Maps
@@ -40,14 +40,14 @@ fuerte para el hero.
 | Miércoles | 17:00 – 21:00 |
 | Jueves | 17:00 – 21:00 |
 | Viernes | **17:00 – 22:00** |
-| Sábado | **17:00 – 22:00** |
-| Domingo | 17:00 – 21:00 |
+| Sábado | **10:00 – 22:00** (de su bio de Instagram) |
+| Domingo | **12:00 – 21:00** (de su bio de Instagram) |
 
 ```js
 window.HORARIO = {
   dias: ["17:00 - 21:00","17:00 - 21:00","17:00 - 21:00","17:00 - 21:00",
-         "17:00 - 22:00","17:00 - 22:00","17:00 - 21:00"],
-  fuente: "Google Maps, 15-09-2026"
+         "17:00 - 22:00","10:00 - 22:00","12:00 - 21:00"],
+  fuente: "Bio de @cafeteriabeyka (sáb y dom) + Google Maps, 15-09-2026"
 };
 ```
 
@@ -77,15 +77,23 @@ personal atento y cordial incluso en horas de mayor afluencia*.
 igual la bitácora antes de fijarlo. La paleta se puede muestrear con Pillow
 de `fotos/b01.jpg` o `fotos/b15.jpg`, como se hizo con Café Küpa.
 
-## 📱 Instagram: hay un handle en su propia carta
+## 📱 Instagram VERIFICADO — y contradice el horario de Google
 
-El pie de su carta (`fotos/b02.jpg`) muestra **`Cafeteriabeyka`** junto a un
-corazón, al lado del teléfono 9 4532 6568.
+La pista salió del pie de su carta (`fotos/carta.jpg`): **`Cafeteriabeyka`**
+junto a un corazón. **Verificado el 15-09-2026**: el perfil
+`instagram.com/cafeteriabeyka` existe, tiene **8.459 seguidores y 162
+publicaciones**, y su bio declara **la misma dirección y el mismo teléfono**
+que la ficha de Maps. Es de ellos, sin duda.
 
-> ⚠️ **Está anotado, NO verificado.** Antes de enlazarlo hay que abrir
-> `instagram.com/cafeteriabeyka` y confirmar que existe y que es de ellos.
-> Sale de su propio material, así que es una pista muy fuerte — pero la
-> regla del proyecto es comprobar, no deducir.
+Su bio, textual:
+
+> "Abierto Domingo de 12hrs a 21hrs sábado 10am a 22pm lunes a jueves de
+> 17hrs a 21hrs reservas al +56945326568 Av Los Zapadores 1961, Conchali"
+
+**El horario del fin de semana NO es el que dice Google.** Se aplicó el
+criterio del proyecto (gana el material del propio local) y el sitio usa el
+de la bio para sábado y domingo. El viernes se mantiene el de Google porque
+la bio no lo menciona, y no mencionarlo no es desmentirlo.
 
 ## Carta — parcial, y hay que tener cuidado
 
@@ -173,9 +181,9 @@ Es el **tercer** caso del día (también pasó en Café Küpa). El extractor por
 
 ## Lo que falta antes de construir
 
-- [ ] 2–3 reseñas positivas con nombre, ordenando por "Valoración más alta"
-- [ ] Verificar `instagram.com/cafeteriabeyka`
-- [ ] Renombrar las fotos de `b01…b17` a nombres descriptivos
-- [ ] Muestrear la paleta rosa/verde de `b01` o `b15` con Pillow
+- [x] 2–3 reseñas positivas con nombre — hechas: Nicolás Rojas, Claudia Flores, Isidora Cortés, Manuel Parra
+- [x] Verificar `instagram.com/cafeteriabeyka` — confirmado, 8.459 seguidores
+- [x] Renombrar las fotos — hecho
+- [x] Paleta definida: rosa `#E0637F` + `#F6AFC0` + verde `#6B8E5A`
 - [ ] Confirmar si el teléfono tiene WhatsApp (`wa.me/c/56945326568`)
 - [ ] Pedir la carta completa con precios
