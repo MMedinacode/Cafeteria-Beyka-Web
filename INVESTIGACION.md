@@ -30,8 +30,8 @@ Coordenadas: -33.3871097, -70.6830053
 
 ## Horario — el dato más distintivo del local
 
-**Sólo abren de tarde/noche.** Eso no lo hace casi nadie y es un gancho
-fuerte para el hero.
+Abren **los siete días**, de lunes a viernes sólo de tarde/noche, y el fin
+de semana desde temprano. Casi nadie hace eso, y es el gancho del hero.
 
 | Día | Horario |
 |---|---|
@@ -125,47 +125,70 @@ tortas y pasteles de vitrina · copas de helado · waffles con helado ·
 churros con milkshake · milkshake de oreo · chocolate caliente · jugos
 naturales · ensaladas · un plato de carne mechada con papas · tequeños
 
-## Reseñas
+## Reseñas reales positivas (ordenadas por "Valoración más alta")
 
-> ⚠️ **PENDIENTE: faltan las reseñas positivas ordenadas por valoración.**
-> Las que salen por defecto son **mixtas** y una es abiertamente mala:
+Las que Google muestra por defecto son **mixtas**, así que hubo que ordenar.
+Copiadas textuales. **No corregir la ortografía.**
 
-- **Lourdes Sabel** (Local Guide, 20 reseñas, hace 3 meses) — **positiva**:
-  > Me encantó el lugar, hacía 1 año que no lo visitaba y si bien se
-  > mantiene su esencia estaba renovado, la música ambiental es muy
-  > agradable, mi madre estaba de cumpleaños y el dueño la saludo y nos
-  > atendieron muy bien, ella estaba feliz
+1. **Nicolás Rojas** — Local Guide · 24 reseñas
+   > Excelente cafetería con una muy buena variedad de preparaciones,
+   > destaca mucho en la calidad y abundancia de sus platos como por ejemplo
+   > de sus Waffles tanto dulces como salados. Muy buena ambientación y
+   > siempre se agradece comer algo rico después del trabajo. Espero que
+   > sigan mejorando y que les vaya excelente.
 
-- **Katherine Noemi Covarrubias González** — ⚠️ **muy negativa**
-  ("Lo pase PÉSIMO", reclama que no la saludaron al llegar). **No va al
-  sitio**, pero conviene que Matías la conozca antes de escribirles.
+2. **Claudia Flores** — 3 reseñas
+   > Un ambiente acogedor, con excelente atención, exquisita variedad de
+   > platos dulces y salados. Este sandwich en pan italiano hecho aquí mismo
+   > es simplemente delicioso!!! Recomendadísimo.
 
-- **“??”** (Local Guide, 10 reseñas) — positiva pero el autor no tiene
-  nombre legible → **no sirve**, hace falta el nombre de quien la escribió.
+3. **Isidora Cortés (Tay)** — Local Guide · 18 reseñas
+   > Muy buen lugar, linda estética y platos deliciosos con porciones
+   > abundantes. Hoy viernes hubo violinista en vivo.
 
-→ Antes de construir: abrir la ficha, **ordenar por "Valoración más alta"**
-y sacar 2–3 positivas con nombre completo.
+4. **Manuel Parra Zúñiga** — Local Guide · 30 reseñas · hace 5 meses
+   > Muy lindo lugar, se nota el cariño que le ponen, la comida muy rica y
+   > la atención con amabilidad, un siete.
+
+5. **Lourdes Sabel** — Local Guide · 20 reseñas (va en Nosotros, no en Reseñas)
+   > Me encantó el lugar, hacía 1 año que no lo visitaba y si bien se
+   > mantiene su esencia estaba renovado, la música ambiental es muy
+   > agradable, mi madre estaba de cumpleaños y el dueño la saludo y nos
+   > atendieron muy bien, ella estaba feliz
+
+### ⚠️ La reseña negativa que Matías debería conocer
+
+**Katherine Noemi Covarrubias González** (Local Guide, 82 reseñas, 784
+fotos) escribió *"Lo pase PÉSIMO"* y reclama que al llegar no la saludaron.
+**No va al sitio**, pero es una Local Guide con mucho alcance y sale
+segunda por defecto en su ficha. Conviene saberlo antes de escribirles.
 
 **Sin red flags** del tipo "café con piernas".
 
-## Fotos reales → `fotos/` (17 usables)
+## Fotos reales → `fotos/` (17 usables, ya renombradas)
 
-Bajadas a 2000×1500 y **revisadas una por una** en hoja de contacto.
-Todavía con nombre provisional `b01…b17` — falta renombrarlas.
+Bajadas de su ficha, **revisadas una por una** en hoja de contacto y luego
+comprimidas a 1600px / calidad 80.
 
 | Archivo | Qué es |
 |---|---|
-| `b01`, `b05`, `b10`, `b15` | **El salón rosado con luces y flores** — la identidad |
-| `b02` | Su carta impresa (rosa) |
-| `b16`, `b17` | Vitrina de tortas y pasteles |
-| `b03` | Chocolate caliente |
-| `b04` | Postre con crema y frutos rojos |
-| `b06` | Churros con milkshake |
-| `b07`, `b11`, `b13` | Waffles, jugos, ensalada |
-| `b08` | Milkshake de oreo |
-| `b09` | Bandeja de bocados |
-| `b12` | Copa de helado grande |
-| `b14` | Carne mechada con papas |
+| `salon-jardin.jpg` | **El salón rosado con luces y flores** — es el hero |
+| `salon-amplio.jpg` | Vista amplia del salón |
+| `vitrina-flores.jpg` | Pasteles entre flores |
+| `carta.jpg` | Su carta impresa (rosa) |
+| `vitrina-tortas.jpg`, `pasteles.jpg` | Vitrina de tortas y pasteles |
+| `chocolate.jpg` | Chocolate caliente |
+| `postre-frutos.jpg` | Postre con crema y frutos rojos |
+| `limonada.jpg` | Limonada en copa alta |
+| `churros-milkshake.jpg` | Churros con milkshake |
+| `waffle-jugos.jpg`, `waffle-ensalada.jpg`, `waffle-frutas.jpg` | Waffles |
+| `milkshake-oreo.jpg` | Milkshake de oreo |
+| `bandeja.jpg` | Bandeja de bocados |
+| `copa-helado.jpg` | Copa de helado grande |
+| `mechada.jpg` | Carne mechada con papas |
+
+**Las 17 están en uso en el sitio** (auditado con el chequeo de fotos sin
+enlazar de la bitácora).
 
 ### 🚨 Se volvieron a colar fotos de otros negocios
 
@@ -179,7 +202,7 @@ De 19 bajadas **se borraron 2**:
 Es el **tercer** caso del día (también pasó en Café Küpa). El extractor por
 `background-image` no aplica el corte de "También se buscó". **Arreglarlo.**
 
-## Lo que falta antes de construir
+## Lo que falta
 
 - [x] 2–3 reseñas positivas con nombre — hechas: Nicolás Rojas, Claudia Flores, Isidora Cortés, Manuel Parra
 - [x] Verificar `instagram.com/cafeteriabeyka` — confirmado, 8.459 seguidores
