@@ -24,6 +24,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Cafetería Beyka",
+  "description": "Tortas, helados y waffles bajo guirnaldas de luces. Abierta los 7 días. 4,6 ★ con 124 reseñas y 8.459 seguidores en Instagram.",
+  "image": "https://mmedinacode.github.io/Cafeteria-Beyka-Web/fotos/salon-jardin.jpg",
+  "url": "https://mmedinacode.github.io/Cafeteria-Beyka-Web/",
+  "telephone": "+56945326568",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Los Zapadores 1961",
+    "addressLocality": "Conchalí",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/cafeteriabeyka"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "17:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "17:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "17:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "17:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "17:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "12:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -96,7 +173,7 @@
       <article class="tri-card">
         <h3>Dulce de verdad</h3>
         <p>Vitrina llena de tortas y pasteles, copas de helado grandes,
-           milkshakes y churros. Es lo que más nombran sus clientes.</p>
+           milkshakes y churros. Es lo que más nombran nuestros clientes.</p>
         <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
       </article>
       <article class="tri-card">
@@ -158,7 +235,7 @@
           el domingo. De lunes a viernes parte a las 17:00 —es una cafetería
           de después del trabajo, de la tarde larga— y el fin de semana
           abre mucho antes: <strong>sábado desde las 10:00</strong> y
-          <strong>domingo desde las 12:00</strong>, según su propia bio de
+          <strong>domingo desde las 12:00</strong>, de nuestra bio de
           Instagram.
         </p>
         <p>
@@ -179,7 +256,7 @@
       <figure><img src="fotos/pasteles.jpg" alt="Variedad de pasteles individuales en vitrina" loading="lazy" decoding="async"></figure>
       <figure><img src="fotos/chocolate.jpg" alt="Chocolate caliente servido en taza" loading="lazy" decoding="async"></figure>
     </div>
-    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+    
   </div>
 </section>
 
@@ -190,16 +267,11 @@
       <p class="eyebrow">Carta</p>
       <h2>Lo que hay</h2>
       <p class="sec-lead">
-        Productos reales, de su carta y de sus propias fotos.
       </p>
     </header>
 
     <div class="aviso reveal">
-      <strong>Sobre los precios:</strong> de la carta de Beyka sólo hay
-      publicada una foto, y en ella <b>se alcanzan a leer nada más que tres
-      valores</b>. El resto va sin precio en vez de con uno inventado.
-      Google estima <b>$5.000 a $10.000 por persona</b>, informado por 53
-      clientes.
+      <strong>Referencia de precio</strong>: entre $5.000 y $10.000 por persona.
     </div>
 
         <section class="carta-bloque reveal">
@@ -209,9 +281,9 @@
       </header>
 
     <div class="menu reveal stagger">
-      <article class="menu-item"><div><h4>Expreso</h4><p>Google destaca de su carta el “Expreso doble y capuchino”.</p></div><span class="price">$2.000</span></article>
-      <article class="menu-item"><div><h4>Americano</h4><p>De su carta impresa.</p></div><span class="price">$2.000</span></article>
-      <article class="menu-item"><div><h4>Capuchino</h4><p>De su carta impresa.</p></div><span class="price">$2.500</span></article>
+      <article class="menu-item"><div><h4>Expreso</h4><p>“Expreso doble y capuchino”, de lo más pedido.</p></div><span class="price">$2.000</span></article>
+      <article class="menu-item"><div><h4>Americano</h4><p>De nuestra carta.</p></div><span class="price">$2.000</span></article>
+      <article class="menu-item"><div><h4>Capuchino</h4><p>De nuestra carta.</p></div><span class="price">$2.500</span></article>
     </div>
     <!--
       ⚠️ HAY UN CUARTO PRECIO QUE NO SE PUBLICA.
@@ -232,7 +304,7 @@
     <div class="menu reveal stagger">
       <article class="menu-item">
         <img src="fotos/vitrina-tortas.jpg" alt="Tortas en vitrina" loading="lazy" decoding="async">
-        <div><h4>Tortas y pasteles</h4><p>Vitrina propia. “Exquisitas tortas”, según el resumen de sus reseñas.</p></div><span class="price">Consultar</span></article>
+        <div><h4>Tortas y pasteles</h4><p>Vitrina propia. “Exquisitas tortas”, dicen nuestras reseñas.</p></div><span class="price">Consultar</span></article>
       <article class="menu-item">
         <img src="fotos/copa-helado.jpg" alt="Copa de helado" loading="lazy" decoding="async">
         <div><h4>Copas de helado</h4><p>Con salsas, barquillo y crema. Los helados son de lo más nombrado.</p></div><span class="price">Consultar</span></article>
@@ -247,7 +319,7 @@
         <div><h4>Milkshakes</h4><p>De oreo, con crema encima.</p></div><span class="price">Consultar</span></article>
       <article class="menu-item">
         <img src="fotos/postre-frutos.jpg" alt="Postre con crema y frutos rojos" loading="lazy" decoding="async">
-        <div><h4>Postres con frutos rojos</h4><p>Vistos en sus propias fotos.</p></div><span class="price">Consultar</span></article>
+        <div><h4>Postres con frutos rojos</h4></div><span class="price">Consultar</span></article>
     </div>
     </section>
     <section class="carta-bloque reveal">
@@ -263,10 +335,10 @@
       <article class="menu-item"><div><h4>Sándwich en pan italiano</h4><p>“Hecho aquí mismo”, según la reseña de Claudia Flores.</p></div><span class="price">Consultar</span></article>
       <article class="menu-item">
         <img src="fotos/mechada.jpg" alt="Carne mechada con papas" loading="lazy" decoding="async">
-        <div><h4>Carne mechada</h4><p>Con papas, vista en sus fotos.</p></div><span class="price">Consultar</span></article>
+        <div><h4>Carne mechada</h4><p>Con papas.</p></div><span class="price">Consultar</span></article>
       <article class="menu-item">
         <img src="fotos/bandeja.jpg" alt="Bandeja de bocados" loading="lazy" decoding="async">
-        <div><h4>Bandeja para compartir</h4><p>Vista en sus fotos.</p></div><span class="price">Consultar</span></article>
+        <div><h4>Bandeja para compartir</h4><p></p></div><span class="price">Consultar</span></article>
     </div>
     </section>
     <section class="carta-bloque reveal">
@@ -278,7 +350,7 @@
     <div class="menu reveal stagger">
       <article class="menu-item">
         <img src="fotos/chocolate.jpg" alt="Chocolate caliente" loading="lazy" decoding="async">
-        <div><h4>Chocolate caliente</h4><p>Visto en sus fotos.</p></div><span class="price">Consultar</span></article>
+        <div><h4>Chocolate caliente</h4><p></p></div><span class="price">Consultar</span></article>
       <article class="menu-item">
         <img src="fotos/limonada.jpg" alt="Limonada en copa alta" loading="lazy" decoding="async">
         <div><h4>Limonadas y jugos</h4><p>Servidos en copa alta y en vasos de vidrio.</p></div><span class="price">Consultar</span></article>
@@ -287,7 +359,7 @@
       <article class="menu-item"><div><h4>Agua mineral</h4><p>Con gas y sin gas.</p></div><span class="price">Consultar</span></article>
     </div>
     </section>
-    <p class="note">Lista transcrita de su carta impresa.</p>
+    
   </div>
 </section>
 
@@ -297,7 +369,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Reseñas</p>
       <h2>4,6 ★ · 124 reseñas</h2>
-      <p class="sec-lead">Reales, copiadas tal cual de su ficha de Google Maps.</p>
+      <p class="sec-lead">Lo que dicen nuestros clientes en Google.</p>
     </header>
 
     <div class="revs reveal stagger">
@@ -334,7 +406,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Redes</p>
       <h2>Dónde encontrarnos</h2>
-      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+      <p class="sec-lead">Todos nuestros canales, en un solo lugar.</p>
     </header>
 
     <div class="redes">
@@ -356,7 +428,7 @@
           <figure><img src="fotos/copa-helado.jpg" alt="Copa de helado con salsas y barquillo" loading="lazy" decoding="async"></figure>
           <figure><img src="fotos/vitrina-tortas.jpg" alt="Vitrina llena de tortas y pasteles" loading="lazy" decoding="async"></figure>
         </a>
-        <p class="red-pie">Fotos del local publicadas en su ficha de Google.</p>
+        
       </article>
 
       <a class="red-card reveal" href="tel:+56945326568">
@@ -364,11 +436,11 @@
           <span class="red-logo red-logo-tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
           <span class="red-card-txt">
             <b>+56 9 4532 6568</b>
-            <em>En Google Maps y en su propia carta</em>
+            <em>Nuestro teléfono</em>
           </span>
           <span class="red-card-cta">Llamar →</span>
         </span>
-        <p class="red-pie">Su bio de Instagram dice "reservas" a este mismo número.</p>
+        <p class="red-pie">Por acá también toman reservas.</p>
       </a>
 
       <article class="red-card reveal">
@@ -399,14 +471,7 @@
       propia carta impresa (fotos/carta.jpg).
       Falta todavía descartar TikTok.
     -->
-    <div class="aviso reveal">
-      <strong>Su bio de Instagram dice otro horario que Google.</strong> La
-      ficha de Maps marca sábado y domingo desde las 17:00; su propia bio
-      dice <b>sábado desde las 10:00 y domingo desde las 12:00</b>. Acá
-      mandamos lo que dice el local, que es la fuente más confiable — pero
-      les conviene corregir Google, porque hoy está espantando visitas de
-      fin de semana por la mañana.
-    </div>
+    
   </div>
 </section>
 
@@ -447,10 +512,7 @@
             <li data-dia="6"><span>Sábado</span><b>10:00 – 22:00</b></li>
             <li data-dia="0"><span>Domingo</span><b>12:00 – 21:00</b></li>
           </ul>
-          <p class="sub">
-            Horario de la bio de su propio Instagram (más reciente que
-            Google). El viernes viene de su ficha de Maps, 15-09-2026.
-          </p>
+          
         </div>
 
         <div class="vblock">
@@ -459,7 +521,7 @@
             <span class="vtel-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
             <span class="vtel-txt">
               <b>+56 9 4532 6568</b>
-              <em>En su ficha de Google y en su propia carta</em>
+              
             </span>
             <span class="vtel-flecha" aria-hidden="true">→</span>
           </a>
@@ -478,7 +540,6 @@
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 15a3 3 0 100 6 3 3 0 000-6zM5 15a3 3 0 100 6 3 3 0 000-6zm12.5-9H15V4h4l2 5h1v2h-2.2A5 5 0 0119 21v-2a3 3 0 00.6-5.94L18.4 10H11l-2.2 3H10a5 5 0 11-5 5H3a7 7 0 007-7h.5l3-4h-3V5h5l1 3z"/></svg> Entrega a domicilio</li>
           </ul>
           <p class="sub">
-            Servicios declarados en su ficha de Google.
             <!-- ⚠️ FALTA: no se encontró app de delivery (Rappi/PedidosYa/
                  Uber Eats). No poner botón hasta confirmarlo. -->
           </p>
@@ -561,5 +622,6 @@ window.REDES = {
 <script src="horario.js"></script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
