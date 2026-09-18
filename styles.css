@@ -590,3 +590,12 @@ h1,h2,h3,h4{font-family:"Gloock",Georgia,serif;font-weight:400;
   .carta-bloque-head{ flex-direction:column; align-items:flex-start; gap:4px; }
   .carta-bloque-n{ text-align:left; }
 }
+
+/* ── El logo de verdad ─────────────────────────────────────────────────
+   Estaba dentro de la foto de su propia carta: lettering blanco sobre el
+   rosa de la lámina. Acá va recortado y pasado al rosa de marca, porque
+   la cabecera es casi blanca y en blanco no se vería.
+   El círculo con la B se queda: es el ancla cuando el logo, que es
+   ancho, se achica en móvil. */
+.brand-logo{height:40px; width:auto; display:block}
+@media (max-width:640px){ .brand-logo{height:33px} }
