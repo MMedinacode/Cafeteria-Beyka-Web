@@ -599,3 +599,72 @@ h1,h2,h3,h4{font-family:"Gloock",Georgia,serif;font-weight:400;
    ancho, se achica en móvil. */
 .brand-logo{height:40px; width:auto; display:block}
 @media (max-width:640px){ .brand-logo{height:33px} }
+
+/* ══════════════════════════════════════════════════════════════════════
+   Ajustes del 18-09-2026
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* ── Nosotros: las fotos de abajo respiraban contra el borde ───────────
+   .gal es el último elemento del panel y sólo tenía padding-top, así que
+   la última fila de fotos quedaba pegada al corte de la sección. */
+.gal{ padding-bottom:clamp(30px,5vw,56px); }
+
+/* ── Redes: más aire y más vida ────────────────────────────────────────
+   El problema no era que estuviera rota: era que la tarjeta del teléfono
+   mide la mitad que las que llevan rejilla de fotos, así que la columna
+   de la derecha quedaba con un hueco enorme debajo. Con Facebook sumado
+   son cuatro tarjetas y las dos columnas se emparejan solas. */
+.redes{ gap:22px; padding-top:clamp(26px,4vw,38px); padding-bottom:clamp(20px,3vw,34px); }
+.red-card{ transition:transform .3s var(--fx), box-shadow .3s var(--fx), border-color .3s var(--fx); }
+.red-card:hover{ transform:translateY(-4px); box-shadow:var(--c-sombra-alta); border-color:var(--rosa-cl); }
+.red-card-head{ padding:20px 22px 18px; gap:15px; }
+.red-card-txt b{ font-size:16.5px; }
+.red-pie{ padding:0 22px 18px; margin:0; }
+
+/* La rejilla de fotos: separación entre ellas y zoom al pasar por encima.
+   El zoom va en la foto, no en el marco, así el encuadre no se mueve. */
+.red-grid{ gap:4px; padding:0 4px 4px; }
+.red-grid figure{ overflow:hidden; border-radius:9px; margin:0; }
+.red-grid figure img{ transition:transform .6s var(--fx); display:block; }
+.red-card:hover .red-grid figure img{ transform:scale(1.07); }
+/* Cada foto entra un pelo después que la anterior, de izquierda a derecha. */
+.red-grid figure:nth-child(2) img{ transition-delay:.04s; }
+.red-grid figure:nth-child(3) img{ transition-delay:.08s; }
+
+.red-logo-fb{ background:linear-gradient(135deg,#1877F2,#0C5DC7); color:#fff; }
+
+/* ── Visítanos: la semana, legible de un vistazo ───────────────────────
+   Antes eran siete líneas sueltas, todas iguales, sin saber cuál era hoy.
+   Ahora hay bandas alternas, el día de hoy marcado con una barra del rosa
+   de la marca, y los días cerrados en gris para que se distingan sin
+   tener que leer. horario.js le pone .hs-hoy al día que toca. */
+.horario{ display:grid; gap:2px; margin:0 0 12px; }
+.horario li{
+  display:grid; grid-template-columns:1fr auto; align-items:center; gap:14px;
+  padding:11px 14px; border-radius:10px; font-size:15px;
+  transition:background .2s var(--fx);
+}
+.horario li:nth-child(odd){ background:color-mix(in srgb, var(--rosa) 4%, transparent); }
+.horario li:hover{ background:color-mix(in srgb, var(--rosa) 9%, transparent); }
+.horario li span, .horario li .hs-dia{ color:var(--tinta); }
+.horario li b, .horario li .hs-hora{
+  font-weight:600; font-variant-numeric:tabular-nums; color:var(--tinta);
+}
+.horario li.hs-hoy{
+  background:color-mix(in srgb, var(--rosa) 14%, transparent);
+  box-shadow:inset 3px 0 0 var(--rosa);
+}
+.horario li.hs-hoy span, .horario li.hs-hoy .hs-dia,
+.horario li.hs-hoy b, .horario li.hs-hoy .hs-hora{ font-weight:700; }
+.horario li.hs-hoy .hs-dia::after, .horario li.hs-hoy span::after{
+  content:" · hoy"; color:var(--rosa); font-weight:700;
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+}
+/* Cerrado: gris y sin peso, para que no compita con los días que sí abren. */
+.horario li .hs-cerrado, .horario li b.cerrado{
+  color:var(--gris); font-weight:500; font-style:normal;
+}
+@media (max-width:420px){
+  .horario li{ padding:10px 11px; font-size:14px; }
+  .horario li.hs-hoy .hs-dia::after, .horario li.hs-hoy span::after{ content:""; }
+}
